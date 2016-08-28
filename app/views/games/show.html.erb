@@ -1,0 +1,9 @@
+<h2>Here's the character!</h2>
+
+<ul>
+  <li><%= @game.name %></li>
+  <li><%= @game.city %></li>
+  <li><%= @game.house %></li>
+</ul>
+
+<%= link_to 'Delete Character', "/characters/#{@game.id}", method: 'delete' %>

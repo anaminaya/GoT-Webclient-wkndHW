@@ -1,0 +1,10 @@
+<h2> Game of Thrones</h2>
+
+<ul>
+<% @games.each do |game| %>
+  <li> <%= game.name %></li>
+  <li> <%= game.city %></li>
+  <li> <%= game.house %></li>
+  <br>
+<% end %>
+</ul>

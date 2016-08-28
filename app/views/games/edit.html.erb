@@ -1,0 +1,25 @@
+<h2> Edit Game of Thrones</h2>
+
+<%= form_tag ("/characters/#{@game['id']}", method: 'patch') do %>
+
+<div>
+  <%= label_tag(:name) %>
+  <%= text_field_tag(:name, @game['name']) %>
+</div>
+
+<div>
+  <%= label_tag(:city) %>
+  <%= text_field_tag(:city, @game['city']) %>
+</div>
+
+
+<div>
+  <%= label_tag(:house) %>
+  <%= text_field_tag(:house, @game['house']) %>
+</div>
+
+<div>
+  <%= submit_tag("submit") %>
+</div>
+
+<% end %>
